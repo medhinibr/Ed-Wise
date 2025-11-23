@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ed-Wise | Next Gen Learning</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="background-glow"></div>
+
+    <main class="login-container">
+        <div class="glass-panel">
+            <div class="brand-section">
+                <h1>Ed-Wise <span class="dot">.</span></h1>
+                <p class="tagline">Empowering Students, Connecting Teachers.</p>
+                <div class="features-preview">
+                    <div class="feature-pill"><i class="fa-solid fa-brain"></i> AI Powered</div>
+                    <div class="feature-pill"><i class="fa-solid fa-gamepad"></i> Gamified</div>
+                    <div class="feature-pill"><i class="fa-solid fa-users"></i> Collaborative</div>
+                </div>
+            </div>
+
+            <div class="login-section">
+                <div class="auth-tabs">
+                    <button class="auth-tab active" id="tab-login">Login</button>
+                    <button class="auth-tab" id="tab-signup">Sign Up</button>
+                </div>
+
+                <div id="login-view">
+                    <h2>Welcome Back</h2>
+                    <p>Enter your credentials to continue</p>
+                    <form id="loginForm">
+                        <div class="input-group">
+                            <i class="fa-regular fa-user"></i>
+                            <input type="text" id="login-username" placeholder="Username" required>
+                        </div>
+                        <div class="input-group">
+                            <i class="fa-solid fa-lock"></i>
+                            <input type="password" id="login-password" placeholder="Password" required>
+                        </div>
+                        <button type="submit" class="cta-btn">Login <i class="fa-solid fa-arrow-right"></i></button>
+                    </form>
+                </div>
+
+                <div id="signup-view" style="display: none;">
+                    <h2>Create Account</h2>
+                    <p>Join Ed-Wise today</p>
+
+                    <div class="role-selector">
+                        <button class="role-btn active" data-role="student">
+                            <i class="fa-solid fa-user-graduate"></i>
+                            <span>Student</span>
+                        </button>
+                        <button class="role-btn" data-role="teacher">
+                            <i class="fa-solid fa-chalkboard-user"></i>
+                            <span>Teacher</span>
+                        </button>
+                        <button class="role-btn" data-role="parent">
+                            <i class="fa-solid fa-user-shield"></i>
+                            <span>Parent</span>
+                        </button>
+                    </div>
+
+                    <form id="signupForm">
+                        <div class="input-group">
+                            <i class="fa-regular fa-id-card"></i>
+                            <input type="text" id="signup-name" placeholder="Full Name" required>
+                        </div>
+                        <div class="input-group">
+                            <i class="fa-regular fa-user"></i>
+                            <input type="text" id="signup-username" placeholder="Choose a Username" required>
+                        </div>
+                        <div class="input-group">
+                            <i class="fa-solid fa-lock"></i>
+                            <input type="password" id="signup-password" value="123456789" readonly
+                                style="background: rgba(255,255,255,0.1); cursor: not-allowed;"
+                                title="Default password for new accounts">
+                        </div>
+                        <small
+                            style="display:block; color: #aaa; margin-bottom: 15px; font-size: 0.8rem; text-align: center;">Default
+                            password: 123456789 (you'll be prompted to change it)</small>
+                        <button type="submit" class="cta-btn">Sign Up <i class="fa-solid fa-user-plus"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script type="module" src="js/auth.js"></script>
+</body>
+
+</html>
