@@ -281,4 +281,21 @@ body {
 
 .auth-footer a:hover {
     text-decoration: underline;
+
+}
+
+.footer-fixed {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: #111;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 13px;
+    z-index: 1000;
+}
+body {
+    padding-bottom: 50px; 
 }
