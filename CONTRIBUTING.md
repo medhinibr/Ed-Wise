@@ -1,58 +1,50 @@
 # Contributing to Ed-Wise
 
-First off, thanks for taking the time to contribute! 🎉
+We welcome contributions to the Ed-Wise project. Please review the following guidelines to ensure a smooth collaboration process.
 
-We welcome contributions from the community to help make Ed-Wise better.
-
-## 📋 Table of Contents
+## Table of Contents
 
 *   [Code of Conduct](#code-of-conduct)
-*   [How Can I Contribute?](#how-can-i-contribute)
-    *   [Reporting Bugs](#reporting-bugs)
-    *   [Suggesting Enhancements](#suggesting-enhancements)
-    *   [Pull Requests](#pull-requests)
+*   [Issue Reporting](#issue-reporting)
+    *   [Bug Reports](#bug-reports)
+    *   [Feature Requests](#feature-requests)
+*   [Pull Request Process](#pull-request-process)
 *   [Style Guide](#style-guide)
 
-## 🤝 Code of Conduct
+## Code of Conduct
 
-This project and everyone participating in it is governed by our Code of Conduct. By participating, you are expected to uphold this code.
+This project adheres to a Code of Conduct. All participants are expected to maintain a professional and respectful environment.
 
-## 🚀 How Can I Contribute?
+## Issue Reporting
 
-### Reporting Bugs
+### Bug Reports
 
-This section guides you through submitting a bug report for Ed-Wise. Following these guidelines helps maintainers and the community understand your report, reproduce the behavior, and find related reports.
+When submitting a bug report, please ensure the following:
 
-*   **Use a clear and descriptive title** for the issue to identify the problem.
-*   **Describe the exact steps which reproduce the problem** in as much detail as possible.
-*   **Provide specific examples** to demonstrate the steps.
+*   **Title:** Use a clear, descriptive title.
+*   **Description:** Provide a detailed description of the issue, including steps to reproduce.
+*   **Context:** Include relevant error messages, screenshots, or environment details.
 
-### Suggesting Enhancements
+### Feature Requests
 
-This section guides you through submitting an enhancement suggestion for Ed-Wise, including completely new features and minor improvements to existing functionality.
+For enhancement suggestions:
 
-*   **Use a clear and descriptive title** for the issue to identify the suggestion.
-*   **Provide a step-by-step description of the suggested enhancement** in as much detail as possible.
-*   **Explain why this enhancement would be useful** to most Ed-Wise users.
+*   **Title:** Clearly state the proposed feature.
+*   **Rationale:** Explain the benefit and use case for the feature.
+*   **Implementation:** Outline the proposed approach if applicable.
 
-### Pull Requests
+## Pull Request Process
 
-The process described here has several goals:
+To submit changes to the codebase:
 
-1.  Maintain Ed-Wise's quality.
-2.  Fix problems that are important to users.
-3.  Engage the community in working toward the best possible Ed-Wise.
+1.  **Fork the Repository:** Create a personal fork of the project.
+2.  **Create a Branch:** Create a feature branch from `main`.
+3.  **Implement Changes:** Ensure code adheres to the project style guide.
+4.  **Test:** Verify that changes do not introduce regressions.
+5.  **Submit PR:** Open a Pull Request referencing relevant issues.
 
-Please follow these steps to have your contribution considered by the maintainers:
+## Style Guide
 
-1.  **Fork the repository** and create your branch from `main`.
-2.  If you've added code that should be tested, add tests.
-3.  Ensure the test suite passes.
-4.  Make sure your code lints.
-5.  Issue that pull request!
-
-## 🎨 Style Guide
-
-*   **HTML**: Semantic tags, accessibility focus.
-*   **CSS**: Glassmorphism aesthetic, organized by component.
-*   **JavaScript**: ES6+ features, modular code structure.
+*   **HTML:** Usage of semantic elements and accessibility standards.
+*   **CSS:** Implementation of glassmorphism design tokens; organized by component.
+*   **JavaScript:** Usage of ES6+ features and modular architecture.
