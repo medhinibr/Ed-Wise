@@ -1,50 +1,53 @@
 # Contributing to Ed-Wise
 
-We welcome contributions to the Ed-Wise project. Please review the following guidelines to ensure a smooth collaboration process.
+We welcome contributions that improve the project, fix bugs, enhance performance, or add new features.
 
-## Table of Contents
+## Getting Started
 
-*   [Code of Conduct](#code-of-conduct)
-*   [Issue Reporting](#issue-reporting)
-    *   [Bug Reports](#bug-reports)
-    *   [Feature Requests](#feature-requests)
-*   [Pull Request Process](#pull-request-process)
-*   [Style Guide](#style-guide)
+### 1. Fork the Repository
+Click on the **Fork** button at the top right of the repository page.
 
-## Code of Conduct
+### 2. Clone Your Fork
+```bash
+git clone https://github.com/medhinibr/Ed-Wise.git
+cd Ed-Wise
+```
 
-This project adheres to a Code of Conduct. All participants are expected to maintain a professional and respectful environment.
+### 3. Create a Branch
+Create a new branch for your feature or bug fix:
+```bash
+git checkout -b feature/your-feature-name
+```
 
-## Issue Reporting
+### 4. Configuration
+1.  Duplicate `js/config.example.js` and rename it to `js/config.js`.
+2.  Add your API keys to `js/config.js`.
 
-### Bug Reports
+### 5. Run the Project
+Since this project uses ES6 Modules, you must run it on a local server (opening `index.html` directly will not work).
 
-When submitting a bug report, please ensure the following:
+*   **VS Code:** Right-click `index.html` and select **"Open with Live Server"**.
+*   **Terminal:**
+    ```bash
+    npx serve .
+    ```
 
-*   **Title:** Use a clear, descriptive title.
-*   **Description:** Provide a detailed description of the issue, including steps to reproduce.
-*   **Context:** Include relevant error messages, screenshots, or environment details.
+### 6. Make Your Changes
+Implement your feature or fix. Ensure your code follows the project's style guide (Glassmorphism CSS, ES6+ JS).
 
-### Feature Requests
+### 7. Commit and Push
+```bash
+git add .
+git commit -m "Add a meaningful commit message"
+git push origin feature/your-feature-name
+```
 
-For enhancement suggestions:
+### 8. Create a Pull Request
+1.  Navigate to the original repository.
+2.  Click on **New Pull Request**.
+3.  Select your feature branch and submit.
 
-*   **Title:** Clearly state the proposed feature.
-*   **Rationale:** Explain the benefit and use case for the feature.
-*   **Implementation:** Outline the proposed approach if applicable.
-
-## Pull Request Process
-
-To submit changes to the codebase:
-
-1.  **Fork the Repository:** Create a personal fork of the project.
-2.  **Create a Branch:** Create a feature branch from `main`.
-3.  **Implement Changes:** Ensure code adheres to the project style guide.
-4.  **Test:** Verify that changes do not introduce regressions.
-5.  **Submit PR:** Open a Pull Request referencing relevant issues.
-
-## Style Guide
-
-*   **HTML:** Usage of semantic elements and accessibility standards.
-*   **CSS:** Implementation of glassmorphism design tokens; organized by component.
-*   **JavaScript:** Usage of ES6+ features and modular architecture.
+## Code Style
+*   **HTML/CSS:** Maintain semantic HTML and glassmorphism design consistency.
+*   **JavaScript:** Use modular ES6 syntax.
+*   **Commits:** Keep commits atomic and descriptive.
