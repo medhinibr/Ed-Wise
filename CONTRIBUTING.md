@@ -1,10 +1,10 @@
 # Contributing to Ed-Wise
 
-First off, thanks for taking the time to contribute! 🎉
+First off, thanks for taking the time to contribute! 
 
 We welcome contributions from the community to help make Ed-Wise better.
 
-## 📋 Table of Contents
+##  Table of Contents
 
 *   [Code of Conduct](#code-of-conduct)
 *   [How Can I Contribute?](#how-can-i-contribute)
@@ -13,11 +13,11 @@ We welcome contributions from the community to help make Ed-Wise better.
     *   [Pull Requests](#pull-requests)
 *   [Style Guide](#style-guide)
 
-## 🤝 Code of Conduct
+##  Code of Conduct
 
 This project and everyone participating in it is governed by our Code of Conduct. By participating, you are expected to uphold this code.
 
-## 🚀 How Can I Contribute?
+## How Can I Contribute?
 
 ### Reporting Bugs
 
@@ -51,7 +51,7 @@ Please follow these steps to have your contribution considered by the maintainer
 4.  Make sure your code lints.
 5.  Issue that pull request!
 
-## 🎨 Style Guide
+## Style Guide
 
 *   **HTML**: Semantic tags, accessibility focus.
 *   **CSS**: Glassmorphism aesthetic, organized by component.
