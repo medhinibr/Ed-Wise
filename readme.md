@@ -100,5 +100,4 @@ For any queries, feel free to reach out:
 
 Thank you for checking out the **Ed-Wise** project! Feel free to explore and contribute.
 
----
 © 2025 Ed-Wise. All Rights Reserved.
