@@ -4,7 +4,7 @@ An AI-powered, gamified, and collaborative learning management system designed t
 
 **Live Demo:** [https://ed-wise.netlify.app/](https://ed-wise.netlify.app/)
 
-## 🚀 Key Features
+##  Key Features
 
 *   **AI-Powered Tutor:** Integrated AI study assistant (Groq/LLaMA 3) for instant doubt resolution and personalized study plans.
 *   **Role-Based Access:** tailored dashboards for **Students**, **Teachers**, and **Parents**.
@@ -13,7 +13,7 @@ An AI-powered, gamified, and collaborative learning management system designed t
 *   **Parental Insights:** Real-time tracking of child's progress, attendance, and activity.
 *   **Secure Authentication:** Powered by Firebase (Firestore & Auth).
 
-## 🛠️ Technology Stack
+## Technology Stack
 
 *   **Frontend:** HTML5, CSS3 (Glassmorphism UI), Vanilla JavaScript (ES6+ Modules)
 *   **Backend / Database:** Firebase Firestore (NoSQL), LocalStorage for caching
@@ -21,7 +21,7 @@ An AI-powered, gamified, and collaborative learning management system designed t
 *   **Deployment:** Netlify
 *   **Icons/Fonts:** FontAwesome, Google Fonts (Outfit)
 
-## 📂 Project Structure
+##  Project Structure
 
 ```bash
 Ed-Wise/
@@ -34,7 +34,7 @@ Ed-Wise/
 └── README.md           # Documentation
 ```
 
-## 📦 Installation & Setup
+##  Installation & Setup
 
 1.  **Clone the repository:**
     ```bash
@@ -73,23 +73,23 @@ Ed-Wise/
         ```
     *   Open `http://localhost:8080` in your browser.
 
-## 🔒 Security Note
+##  Security Note
 
 *   **API Keys:** This project uses `js/config.js` to manage API keys. This file is added to `.gitignore` to prevent secret leakage.
 *   **Firebase Rules:** Ensure Firestore security rules are configured to protect user data (read/write access limited to `users` collection).
 
-## 🌍 Deployment
+##  Deployment
 
 This project is configured for **Netlify**.
 1.  Connect your repository.
 2.  Set the publish directory to `.` (root).
 3.  Deploy!
 
-## 🤝 Contributing
+##  Contributing
 
 Contributions are welcome! Please read the [contribution guidelines](CONTRIBUTING.md) first.
 
-## 📬 Contact
+##  Contact
 
 For any queries, feel free to reach out:
 
