@@ -87,7 +87,7 @@ This project is configured for **Netlify**.
 
 ## Contributing
 
-Contributions are welcome. Please read the [contribution guidelines](CONTRIBUTING.md) first.
+Contributions are welcome. Please read the [contribution guidelines](CONTRIBUTING.md)  first.
 
 ## Contact
 
