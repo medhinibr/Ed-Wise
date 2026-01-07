@@ -27,6 +27,7 @@ git checkout -b feature/your-feature-name
 Since this project uses ES6 Modules, you must run it on a local server (opening `index.html` directly will not work).
 
 *   **VS Code:** Right-click `index.html` and select **"Open with Live Server"**.
+*   **Windows Script:** Run the included `start_server.bat` file.
 *   **Terminal:**
     ```bash
     npx serve .
