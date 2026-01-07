@@ -72,5 +72,4 @@ This project is configured for **Netlify**.
 2.  Set the publish directory to `.` (root).
 3.  Deploy!
 
----
 © 2025 Ed-Wise. All Rights Reserved.
