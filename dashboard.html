@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | Ed-Wise</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script type="importmap">
+      {
+        "imports": {
+          "@google/generative-ai": "https://esm.run/@google/generative-ai"
+        }
+      }
+    </script>
+</head>
+
+<body>
+    <div class="app-container">
+
+        <aside class="sidebar">
+            <div class="logo">
+                <h2>Ed-Wise<span class="dot">.</span></h2>
+            </div>
+
+            <nav class="nav-menu">
+            </nav>
+        </aside>
+
+
+        <main class="main-content">
+            <header class="top-bar">
+                <div class="page-title">
+                    <h2 id="pageTitle">Dashboard</h2>
+                    <p id="currentDate">Loading date...</p>
+                </div>
+                <div class="actions" style="flex-wrap: nowrap;">
+                    <div class="search-bar">
+                        <i class="fa-solid fa-search"></i>
+                        <input type="text" placeholder="Search...">
+                    </div>
+                    <button class="icon-btn"><i class="fa-regular fa-bell"></i></button>
+                    <div class="points-display">
+                        <i class="fa-solid fa-gem"></i>
+                        <span id="userPoints">0</span> XP
+                    </div>
+                    <div class="profile-dropdown">
+                        <button class="profile-btn" id="profileDropdownBtn">
+                            <div class="avatar-small">
+                                <i class="fa-solid fa-user"></i>
+                            </div>
+                        </button>
+                        <div class="dropdown-menu" id="profileDropdownMenu">
+                            <div class="dropdown-header">
+                                <div class="avatar-medium">
+                                    <i class="fa-solid fa-user"></i>
+                                </div>
+                                <div>
+                                    <h4 id="dropdownUserName">User</h4>
+                                    <span id="dropdownUserRole">Role</span>
+                                </div>
+                            </div>
+                            <div class="dropdown-divider"></div>
+                            <button class="dropdown-item" id="viewProfileBtn">
+                                <i class="fa-solid fa-user"></i>
+                                <span>My Profile</span>
+                            </button>
+                            <button class="dropdown-item" id="settingsBtn">
+                                <i class="fa-solid fa-gear"></i>
+                                <span>Settings</span>
+                            </button>
+                            <div class="dropdown-divider"></div>
+                            <button class="dropdown-item logout-item" id="topBarLogoutBtn">
+                                <i class="fa-solid fa-right-from-bracket"></i>
+                                <span>Logout</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div id="contentArea" class="content-area">
+
+            </div>
+        </main>
+    </div>
+
+
+    <div id="modalContainer"></div>
+
+    <script type="module" src="js/app.js"></script>
+    <footer class="footer-fixed">
+        © 2025 B R MEDHINI — All Rights Reserved
+    </footer>
+
+
+</body>
+
+</html>

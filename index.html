@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ed-Wise | Next Gen Learning</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        // Fix for missing trailing slash in URL which breaks relative paths
+        (function () {
+            var path = window.location.pathname;
+            if (path.endsWith("/Ed-wise")) {
+                window.location.replace(path + "/");
+            }
+        })();
+    </script>
+</head>
+
+<body>
+    <div class="background-glow"></div>
+
+    <main class="login-container">
+        <div class="glass-panel">
+            <div class="brand-section">
+                <h1>Ed-Wise <span class="dot">.</span></h1>
+                <p class="tagline">Empowering Students, Connecting Teachers.</p>
+                <div class="features-preview">
+                    <div class="feature-pill"><i class="fa-solid fa-brain"></i> AI Powered</div>
+                    <div class="feature-pill"><i class="fa-solid fa-gamepad"></i> Gamified</div>
+                    <div class="feature-pill"><i class="fa-solid fa-users"></i> Collaborative</div>
+                </div>
+            </div>
+
+            <div class="login-section">
+                <div class="auth-tabs">
+                    <button class="auth-tab active" id="tab-login">Login</button>
+                    <button class="auth-tab" id="tab-signup">Sign Up</button>
+                </div>
+
+                <div id="login-view">
+                    <h2>Welcome Back</h2>
+                    <p>Enter your credentials to continue</p>
+                    <form id="loginForm">
+                        <div class="input-group">
+                            <i class="fa-regular fa-user"></i>
+                            <input type="text" id="login-username" placeholder="Username" required>
+                        </div>
+                        <div class="input-group">
+                            <i class="fa-solid fa-lock"></i>
+                            <input type="password" id="login-password" placeholder="Password" required>
+                        </div>
+                        <div style="text-align: right; margin-bottom: 15px;">
+                            <a href="#" id="forgotPasswordLink"
+                                style="color: var(--primary); font-size: 0.85rem; text-decoration: none;">Forgot
+                                Password?</a>
+                        </div>
+                        <button type="submit" class="cta-btn">Login <i class="fa-solid fa-arrow-right"></i></button>
+                    </form>
+                </div>
+
+                <div id="signup-view" style="display: none;">
+                    <h2>Create Account</h2>
+                    <p>Join Ed-Wise today</p>
+
+                    <div class="role-selector">
+                        <button class="role-btn active" data-role="student">
+                            <i class="fa-solid fa-user-graduate"></i>
+                            <span>Student</span>
+                        </button>
+                        <button class="role-btn" data-role="teacher">
+                            <i class="fa-solid fa-chalkboard-user"></i>
+                            <span>Teacher</span>
+                        </button>
+                        <button class="role-btn" data-role="parent">
+                            <i class="fa-solid fa-user-shield"></i>
+                            <span>Parent</span>
+                        </button>
+                    </div>
+
+                    <form id="signupForm">
+                        <!-- Common Fields -->
+                        <div id="common-fields">
+                            <div class="input-group">
+                                <i class="fa-regular fa-user"></i>
+                                <input type="text" id="signup-name" placeholder="Full Name" required>
+                            </div>
+                            <div class="input-group">
+                                <i class="fa-solid fa-at"></i>
+                                <input type="text" id="signup-username" placeholder="Username" required>
+                            </div>
+                        </div>
+
+                        <!-- Student Specific -->
+                        <div id="student-fields" class="role-specific-fields">
+                            <div class="input-group">
+                                <i class="fa-solid fa-id-card"></i>
+                                <input type="text" id="signup-roll" placeholder="Roll Number">
+                            </div>
+                            <div class="input-group">
+                                <i class="fa-solid fa-school"></i>
+                                <input type="text" id="signup-school" placeholder="School Name">
+                            </div>
+                        </div>
+
+                        <!-- Teacher Specific -->
+                        <div id="teacher-fields" class="role-specific-fields" style="display: none;">
+                            <div class="input-group">
+                                <i class="fa-regular fa-envelope"></i>
+                                <input type="email" id="signup-email" placeholder="Email Address">
+                            </div>
+                            <div class="input-group">
+                                <i class="fa-solid fa-school"></i>
+                                <input type="text" id="signup-teacher-school" placeholder="School Name">
+                            </div>
+                        </div>
+
+                        <!-- Parent Specific -->
+                        <div id="parent-fields" class="role-specific-fields" style="display: none;">
+                            <div class="input-group">
+                                <i class="fa-solid fa-child"></i>
+                                <input type="text" id="signup-child-name" placeholder="Child's Name">
+                            </div>
+                            <div class="input-group">
+                                <i class="fa-solid fa-id-card-clip"></i>
+                                <input type="text" id="signup-child-roll" placeholder="Child's Roll Number">
+                            </div>
+                            <div class="input-group">
+                                <i class="fa-solid fa-school"></i>
+                                <input type="text" id="signup-child-school" placeholder="School Name">
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <i class="fa-solid fa-lock"></i>
+                            <input type="password" id="signup-password" placeholder="Password" required>
+                        </div>
+
+                        <button type="submit" class="cta-btn">Sign Up <i class="fa-solid fa-user-plus"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Forgot Password Modal -->
+    <div id="forgotPasswordModal" class="modal-overlay"
+        style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); z-index: 1000; justify-content: center; align-items: center;">
+        <div class="modal-content glass-panel"
+            style="max-width: 400px; padding: 30px; position: relative; background: #1a1a2e; border: 1px solid rgba(255,255,255,0.1); border-radius: 20px;">
+            <button id="closeForgotModal"
+                style="position: absolute; top: 15px; right: 15px; background: none; border: none; color: white; cursor: pointer;">
+                <i class="fa-solid fa-times fa-lg"></i>
+            </button>
+            <h3 style="margin-bottom: 10px;">Reset Password</h3>
+            <p style="margin-bottom: 20px; font-size: 0.9rem; color: #ccc;">Enter your registered parent email address
+                to receive a password reset link.</p>
+            <form id="forgotPasswordForm">
+                <div class="input-group" style="margin-bottom: 20px;">
+                    <i class="fa-regular fa-envelope"></i>
+                    <input type="email" id="reset-email" placeholder="Parent Email Address" required
+                        style="width: 100%; padding: 12px; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; color: white;">
+                </div>
+                <button type="submit" class="cta-btn" style="width: 100%;">Send Reset Link</button>
+            </form>
+        </div>
+    </div>
+
+    <script type="module" src="js/auth.js?v=2"></script>
+    <footer class="footer-fixed">
+        © 2025 B R MEDHINI — All Rights Reserved
+    </footer>
+</body>
+
+</html>
